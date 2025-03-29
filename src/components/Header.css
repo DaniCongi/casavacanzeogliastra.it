@@ -1,9 +1,16 @@
-nav {
+.logo {
+    height: 80px;;
+}
+
+
+
+/* nav {
     font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
     padding: 20px;
     color: #333;
     font-size: 2em;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+    margin-top: 5em;
+    margin-bottom: 5em;
     font-weight: bold;
-}
+} */
