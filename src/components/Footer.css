@@ -1,0 +1,28 @@
+/* .footer {
+    background-color: whitesmoke;
+    font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10% 30px 10%;
+}
+
+.grid {
+    display: flex;
+    padding: 0 10%;
+    flex-wrap: wrap;   
+}
+
+.col-50 {
+    width: 50%;
+    padding: 10% 20px;
+}
+
+@media (max-width: 768px) {
+    .col-50 {
+        width: 100%;
+        padding: 0;
+    }
+} */
+

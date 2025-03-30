@@ -1,16 +1,43 @@
+.header {
+    background-color: whitesmoke;
+    font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10% 30px 10%;
+}
+
 .logo {
-    height: 80px;;
+    height: 80px;
+ 
+}
+
+.menu ul {padding: 0;}
+.menu li {display: inline-block;}
+.menu a {padding: 15px 20px; display: block; color: black; font-weight: bold; font-size: large; text-decoration: none;}
+
+.button {
+    color: white;
+    background-color: rgb(81, 138, 225);
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgb(13, 192, 13);
+    color: white;
+}
+
+/* Responsive Design - Media query for mobile devices (ovvero rendiamo il sito responsive per i cellulari) */
+
+@media (max-width: 768px) {
+    .header {padding-left: 20px; padding-right: 60px; position: relative;}
+
+    .menu {position: absolute; top:108%; right: 100%; width: 100%;}
+
+    .menu li {width: 100%; }   
 }
 
 
-
-/* nav {
-    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: black;
-    padding: 20px;
-    color: #333;
-    font-size: 2em;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    font-weight: bold;
-} */
+/* in fase di realizzazione di tutti gli elementi dell'header ho messo dei bordi rossi tra gli elementi (header, logo, menu, button) per capire se sono stati creati correttamente: border: 1px solid red; */

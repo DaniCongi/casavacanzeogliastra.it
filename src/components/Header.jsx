@@ -12,9 +12,11 @@ function Header () {
         <li><a href="cultura-e-cucina.html">Cultura e Cucina</a></li>
       </ul>
     </nav>
-    <a href="contatti.html" className="button">Contatti</a>
+    <a href="contatti.html" className="button">Contact</a>
     </header>
   );
 }
 
 export default Header;
+
+/*nel logo ricorda di mettere:Casa Vacanze Ogliastra - La tua vacanza in Sardegna inizia da qui*/
