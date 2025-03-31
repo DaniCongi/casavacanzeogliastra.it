@@ -12,7 +12,7 @@ function Hero () {
           <a href="villette.html" className='button'>Discover more</a>
         </div>
         <div className="hero_image">
-          <img src="./src/img/img_index.jpg" alt="Casa Vacanze Ogliastra"/>
+          <img src="./src/img/img1_index.jpg" alt="Casa Vacanze Ogliastra"/>
         </div>   
       </hero>
   );
