@@ -1,7 +1,6 @@
 .hero {
     display: flex;
-    padding: 30px 10% 30px 10%;   
-    
+    padding: 30px 10% 30px 10%;    
 }
 
 .hero_text {
@@ -21,13 +20,19 @@
 }
 
 .hero_image img {
-    width: 100%; /* Rende l'immagine responsive */
-    height: auto; /* Rende l'immagine responsive */
     display: block;
     margin: 0 auto;
     /* box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2); Sfumatura ai bordi */
     /* border-radius: 10px; Arrotonda leggermente i bordi (opzionale) */
 }
+
+/* hero_slider {
+    width: 100%;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+} */
+
 
 /* Responsive Design - Media query for mobile devices (ovvero rendiamo il sito responsive per i cellulari) */
 

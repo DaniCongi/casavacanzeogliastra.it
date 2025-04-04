@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
   font-family: Noto Sans, Roboto, Rubik, Montserrat, Open Sans, Lato;
@@ -9,6 +13,41 @@ body {
 .highlight {
   color: rgb(13, 192, 13);
 }
+
+.img_resp {
+  height: auto; 
+  width: 100%;
+
+}
+
+.grid {
+border: 1px solid rgb(79, 237, 54);
+display: flex; /* con display flex mettiamo gli elementi che stanno dentro il grid in colonna */
+flex-wrap: wrap; /* con flex-wrap gli dico che se una colonna è più lunga dello spazio disponibile vai a capo */
+} 
+
+.col-25 {border: 1px solid red; width: 25%; padding: 10% 20px;}
+.col-33 {border: 1px solid red; width: 33%; padding: 10% 20px;}
+.col-40 {border: 1px solid red; width: 40%; padding: 10% 20px;}
+.col-50 {border: 1px solid red; width: 50%; padding: 10% 20px;}
+.col-60 {border: 1px solid red; width: 60%; padding: 10% 20px;}
+.col-100 {border: 1px solid red; width: 100%; padding: 10% 20px;} 
+
+@media (max-width: 768px) {
+    .col-25 {width: 100%;}
+    .col-33 {width: 100%;}
+    .col-40 {width: 100%;}
+    .col-50 {width: 100%;}
+    .col-60 {width: 100%;}
+    .col-100 {width: 100%;}
+}
+
+/* per capire dove stiamo creando gli elementi: border: 1px solid red; */
+
+/* con asterisco prendo tutti gli elementi del mio sito e dando border-box risolvo molti molti problemi legati ai bordi, padding, etc */
+
+
+/* Il grid è un sistema di layout a griglia che permette di organizzare gli elementi in righe e colonne. Le classi col-25, col-40, etc definiscono le larghezze delle colonne in percentuale. Il grid facciamolo con position relative, le col con position absolute. il fixed invece fissa gli elementi allo scroll della pagina */
 
 /* #root {
   font-family: Montserrat, Roboto, Inter, sans-serif;

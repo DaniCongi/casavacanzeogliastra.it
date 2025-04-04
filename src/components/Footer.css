@@ -1,24 +1,33 @@
 .footer {
-    border: 1px solid red;
-    background-color: whitesmoke;
+    background-color: rgb(151, 149, 149);
+    color: white;
     font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
     font-size: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 30px 10% 30px 10%;
-}
-
-.grid {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px 10% 30px 10%; 
 }
 
-.col-25 {
-    border: 1px solid red;
-    display: inline-block;
-    padding: 15px 20px; display: block; color: black;
+.footer_text {
+    padding: 0px 80px 0px 0px;
+    flex: 1; 
 }
+
+/* .footer_Privacy_Cookies_Policy {
+    flex: 0;
+    text-decoration: none;
+    color: white;
+    text-align: bottom;
+} */
+
+.footer_social {
+    flex: 0;
+}
+
+.footer_social img {
+    height: 40px;
+}
+
+/* .footer_back_to_top {
+    text-align: right;
+} */
