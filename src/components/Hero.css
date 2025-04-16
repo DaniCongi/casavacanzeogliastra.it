@@ -1,4 +1,5 @@
 .hero {
+    border: 1px solid red; 
     display: flex;
     padding: 30px 10% 30px 10%;    
 }

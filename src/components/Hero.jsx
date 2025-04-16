@@ -2,7 +2,6 @@ import './Hero.css';
 
 
 function Hero () {
-
   return (
     <hero className="hero">
         <div className="hero_text">
@@ -14,15 +13,8 @@ function Hero () {
         </div>
         <div className="hero_image">
           <img src="./src/img/img1_index.jpg" alt="Casa Vacanze Ogliastra" className="img_resp"/>
-        </div>   
-        
-        {/* <div className="hero_slider">
-          <img src="./src/img/Hero_Slider_1.jpg" alt="Slider"/>
-          <img src="./src/img/Hero_Slider_2.jpg" alt="Slider"/>
-          <img src="./src/img/Hero_Slider_3.jpg" alt="Slider"/>
-        </div>  */}
-
-      </hero>
+        </div>
+  </hero>
   );
 }
 
