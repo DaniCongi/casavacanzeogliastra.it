@@ -1,0 +1,45 @@
+.banner {
+    border: 1px solid red; 
+    display: flex;
+    padding: 30px 10% 30px 10%;    
+}
+
+.banner_text {
+    width: 40%;
+    text-align: justify;
+    padding: 0px 80px 0px 0px;
+    font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.banner_image {
+    width: 60%;  
+    padding: 25px 0px 15px 20px;
+}
+
+.banner_image img {
+    display: block;
+    margin: 0 auto;
+    /* box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2); Sfumatura ai bordi */
+    /* border-radius: 10px; Arrotonda leggermente i bordi (opzionale) */
+}
+
+/* Responsive Design - Media query for mobile devices (ovvero rendiamo il sito responsive per i cellulari) */
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column; /* Cambia la direzione del flex per i dispositivi mobili */
+        padding: 20px 5% 20px 5%; /* Riduce il padding per i dispositivi mobili */
+    }
+
+    .banner_text {
+        width: 100%; /* Rende il testo a larghezza piena */
+        padding: 0px; /* Rimuove il padding per i dispositivi mobili */
+    }
+
+    .banner_image {
+        width: 100%; /* Rende l'immagine a larghezza piena */
+        padding: 20px 0px 0px 0px; /* Riduce il padding per i dispositivi mobili */
+    }
+}

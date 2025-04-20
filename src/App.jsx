@@ -6,17 +6,18 @@ import './App.css'
 
 import Header from './components/Header'
 import Hero from './components/Hero'
-import Card from './components/Card'
+import Cards from './components/Cards'
 import Footer from './components/Footer'
-import Cover from './components/Cover'
+import Banner from './components/Banner'
+
 
 function App() {
    return (
     <>
         <Header/>
         <Hero/>
-        <Cover/>
-        <Card/>
+        <Banner/>
+        <Cards/>
         <Footer/>
     </>
   )
@@ -24,4 +25,3 @@ function App() {
 
 export default App
 
-// info utili: terminale - npm run dev

@@ -1,55 +1,72 @@
-.hero {
-    border: 1px solid red; 
+.heroCover {
+    /* border: 1px solid red;  */
     display: flex;
-    padding: 30px 10% 30px 10%;    
+    height: 75vh;
+    justify-content: center;
+    align-items: center; /* Allinea verticalmente al centro */
+    background-image: url("./src/img/Cover_1.jpg");
+    background-size:cover; /* Copre l'intera area del contenitore */
+    background-position: bottom;
+    background-repeat: no-repeat; /* Non ripete l'immagine di sfondo */
+    padding: 0px;
+    border: 0px;
+    position: relative;
 }
 
-.hero_text {
-    width: 40%;
-    text-align: justify;
-    padding: 0px 80px 0px 0px;
-    font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
-    font-size: 15px;
-    line-height: 1.4;
-
-}
-
-.hero_image {
-    width: 60%;  
-    padding: 25px 0px 15px 20px;
-
-}
-
-.hero_image img {
-    display: block;
-    margin: 0 auto;
-    /* box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2); Sfumatura ai bordi */
-    /* border-radius: 10px; Arrotonda leggermente i bordi (opzionale) */
-}
-
-/* hero_slider {
+.heroCover_filter {
+    position: absolute; /* Posiziona il filtro sopra l'immagine di sfondo */
     width: 100%;
-    height: auto; 
-    display: block;
-    margin: 0 auto;
-} */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Colore del filtro con opacità */
+    z-index: 0;
+}
 
+.heroCover_text {
+    text-align: center; /* Allinea il testo in basso */
+    font-family: Noto Sans, Montserrat, Open Sans, Lato, Rubik;
+    font-size: 20px;
+    padding: 0px;
+    color: whitesmoke; 
+    position: absolute;
+    z-index: 1; /* Assicura che il testo sia sopra il filtro */
+}
 
-/* Responsive Design - Media query for mobile devices (ovvero rendiamo il sito responsive per i cellulari) */
+.clickable-text {
+    color: white; /* Colore del testo */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
 
+.clickable-text .highlight {
+    color: white; /* Colore predefinito */
+    transition: color 0.3s ease; /* Transizione fluida */
+}
+
+.clickable-text:hover .highlight {
+    color: rgb(13, 192, 13); /* Colore al passaggio del mouse */
+}
+
+/* Media query per dispositivi con larghezza massima di 768px (tablet) */
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column; /* Cambia la direzione del flex per i dispositivi mobili */
-        padding: 20px 5% 20px 5%; /* Riduce il padding per i dispositivi mobili */
+    .heroCover {
+        height: 50vh; /* Riduce l'altezza per schermi più piccoli */
+        background-position: center; /* Centra l'immagine di sfondo */
     }
 
-    .hero_text {
-        width: 100%; /* Rende il testo a larghezza piena */
-        padding: 0px; /* Rimuove il padding per i dispositivi mobili */
+    .heroCover_text {
+        font-size: 16px; /* Riduce la dimensione del testo */
+        padding: 10px; /* Aggiunge un po' di spazio interno */
+    }
+}
+
+/* Media query per dispositivi con larghezza massima di 480px (smartphone) */
+@media (max-width: 480px) {
+    .heroCover {
+        height: 50vh; /* Riduce ulteriormente l'altezza */
+        background-position: center; 
     }
 
-    .hero_image {
-        width: 100%; /* Rende l'immagine a larghezza piena */
-        padding: 20px 0px 0px 0px; /* Riduce il padding per i dispositivi mobili */
+    .heroCover_text {
+        font-size: 12px; /* Riduce ulteriormente la dimensione del testo */
+        padding: 0px; /* Riduce il padding */
     }
 }

@@ -1,3 +1,4 @@
+/* con asterisco prendo tutti gli elementi del mio sito e dando border-box risolvo molti molti problemi legati ai bordi, padding, etc */
 * {
   box-sizing: border-box;
 }
@@ -32,12 +33,26 @@ body {
   width: 100%;
 }
 
-.grid {
-/* border: 1px solid rgb(79, 237, 54); */
-display: flex; /* con display flex mettiamo gli elementi che stanno dentro il grid in colonna */
-flex-wrap: wrap; /* con flex-wrap gli dico che se una colonna è più lunga dello spazio disponibile vai a capo */
+a {
+  color: black; 
+  text-decoration: none; /* Rimuove la sottolineatura */
+  list-style: none; /* Rimuove i punti elenco */
+}
+
+ul {
+  text-decoration: none;
+  list-style: none; /* Assicura che i puntini siano rimossi anche dall'elemento <ul> */
+}
+
+/* Il grid è un sistema di layout a griglia che permette di organizzare gli elementi in righe e colonne. Le classi col-25, col-40, etc definiscono le larghezze delle colonne in percentuale.*/
+
+/* .grid {
+border: 1px solid rgb(79, 237, 54);
+display: flex;
+flex-wrap: wrap; 
 padding: 30px 10% 30px 10%;
 justify-content: space-between;
+
 } 
 
 .col-25 {width: 25%; border: 1px solid red;}
@@ -54,55 +69,5 @@ justify-content: space-between;
     .col-50 {width: 100%;}
     .col-60 {width: 100%;}
     .col-100 {width: 100%;}
-}
-
-a {
-  color: black; /* Colore del testo */
-  text-decoration: none; /* Rimuove la sottolineatura */
-  list-style: none; /* Rimuove i punti elenco */
-}
-
-
-ul {
-  text-decoration: none;
-  list-style: none; /* Assicura che i puntini siano rimossi anche dall'elemento <ul> */
-}
-
-/* .cover {
-  height: 80vh; Imposta l'altezza della cover al 80% dell'altezza disponibile 
-  width: 100%;
-  padding: 4%;
-  background: url('./cover.jpg') no repeat center center; 
-  background-size: cover; Assicura che l'immagine di sfondo copra l'intera area 
-  display: flex; Con display flex mettiamo gli elementi che stanno dentro la cover in colonna
-  justify-content: center;  Allinea gli elementi al centro
-  align-items: center; Allinea gli elementi al centro
-}  */
-
-/* per capire dove stiamo creando gli elementi: border: 1px solid red; */
-
-/* con asterisco prendo tutti gli elementi del mio sito e dando border-box risolvo molti molti problemi legati ai bordi, padding, etc */
-
-
-/* Il grid è un sistema di layout a griglia che permette di organizzare gli elementi in righe e colonne. Le classi col-25, col-40, etc definiscono le larghezze delle colonne in percentuale.*/
-
-/* #root {
-  font-family: Montserrat, Roboto, Inter, sans-serif;
-  background-color: antiquewhite;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
-
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
 } */
 

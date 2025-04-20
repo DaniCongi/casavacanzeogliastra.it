@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './Header.css';
 
+
+
 function Header () {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,6 +23,7 @@ function Header () {
     </nav>
     <a href="contatti.html" className="button">Contact</a>
     <div className="hamburger" onClick={toggleMenu}>
+      <span></span>
       <span></span>
       <span></span>     
     </div>
