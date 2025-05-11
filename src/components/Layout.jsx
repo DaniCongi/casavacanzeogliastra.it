@@ -3,12 +3,12 @@ import Footer from './Footer';
 
 function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header /> {/* Componente Header */}
-      <main className="flex-grow p-4">
+    <div className="layout">
+      <Header /> 
+      <main className="main">
         {children} {/* Contenuto dinamico passato come prop */}
       </main>
-      <Footer /> {/* Componente Footer */}
+      <Footer /> 
     </div>
   );
 }

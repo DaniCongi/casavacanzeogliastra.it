@@ -1,5 +1,8 @@
+import Layout from "./Layout";
+
 function CulturaCucina() {
   return (
+    <Layout>
     <div className="cultura-cucina">
       <h1>Cultura e Cucina</h1>
         <p>
@@ -9,6 +12,7 @@ function CulturaCucina() {
         Le specialità della cucina Terteniese sono quelle tipiche ogliastrine. Tra le pietanze più conosciute ed apprezzate ci sono i culurgiones, formati da sfoglia ripiena di patate e formaggio e le coccoi prenas, saporitissime focacce di patate. Ogni pietanza viene preparata con l'olio extravergine d'oliva prodotto nella zona. Particolarmente apprezzate le svariate pietanze a base di carne, cucinate in diversi modi, e il cui sapore eccezionale è dovuto alla qualità dei pascoli naturali. Un particolare accenno va fatto al delizioso pecorino. Infine abbiamo i dolci tipici terteniesi: amaretti, pardulas e le tanto apprezzate sebadas a base di semola, formaggio e miele.
         </p>
     </div>
+    </Layout>
   );
 }
 export default CulturaCucina;

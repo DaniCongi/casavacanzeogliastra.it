@@ -1,5 +1,8 @@
+import Layout from "./Layout";
+
 function DoveSiamo() {
   return (
+    <Layout>
     <div className="dove-siamo">
       <h1>Dove siamo</h1>
       <p>
@@ -11,6 +14,7 @@ function DoveSiamo() {
         Per chi volesse viaggiare in aereo dall'aeroporto di Cagliari (Elmas) è possibile raggiungere, con una navetta, la stazione Arst e da lì si può decidere se prendere un pullman per Tertenia oppure noleggiare una macchina.
     </p>
     </div>
+    </Layout>
   );
 }
 

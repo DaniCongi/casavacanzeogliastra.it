@@ -1,6 +1,6 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'; // Importa Link da react-router-dom
 import './Header.css';
-
 
 
 function Header () {
@@ -15,13 +15,13 @@ function Header () {
     <img src="./src/img/logo_juve.png" alt="Logo Casa Vacanze Ogliastra" className="logo" />
     <nav className={`menu ${isOpen ? 'open' : ''}`}>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="dove-siamo.html">Dove Siamo</a></li>
-        <li><a href="villette.html">Villette</a></li>
-        <li><a href="cultura-e-cucina.html">Cultura e Cucina</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/DoveSiamo">Dove Siamo</Link></li>
+          <li><Link to="/Villette">Villette</Link></li>
+          <li><Link to="/CulturaCucina">Cultura e Cucina</Link></li>
       </ul>
     </nav>
-    <a href="contatti.html" className="button">Contact</a>
+    <Link to="/Contatti" className="button">Contact</Link>
     <div className="hamburger" onClick={toggleMenu}>
       <span></span>
       <span></span>
