@@ -1,10 +1,10 @@
 .footer {
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
     background-color: whitesmoke;
     font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
     font-size: 12px;
     justify-content: space-between;
-    height: 200px; 
+    height: 220px; 
 }
 
 .footer_text {

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'; // Importa Link da react-router-dom
 import './Cards.css';
 
 function Cards() {
@@ -10,28 +11,28 @@ function Cards() {
   return (
     <div className="grid">
         <div className="col-33">
-            <a href="dove-siamo.html" className="card">
+            <Link to="/DoveSiamo" className="card">
                 <img src="./src/img/Marina_1.jpg" alt="Marina di Tertenia" />
                 <div className="card_text">
                     <h4>Dove Siamo</h4>
                 </div>
-            </a>
+            </Link>
         </div>
         <div className="col-33">
-            <a href="villette.html" className="card">
+            <Link to="/Villette" className="card">
             <img src="./src/img/Antina_1.jpg" alt="Villa Antina"/>
             <div className="card_text">
             <h4>Villa Antina</h4>            
             </div>
-            </a>
+            </Link>
         </div>
         <div className="col-33">
-            <a href="villette.html" className="card">
+            <Link to="/Villette" className="card">
             <img src="./src/img/Congera_1.jpg" alt="Villa Congera"/>
             <div className="card_text">
             <h4>Villa Congera</h4>            
             </div> 
-            </a>
+            </Link>
         </div>
     </div>
   );
