@@ -2,7 +2,7 @@ import './Cards.css';
 
 function Cards() {
     /*
-    qui il concetto è sbagliato, una card dovrebbe essere generica, dovrebbe innanzitutto chiamarsi Card al sigolare.
+    qui il concetto è sbagliato, una card dovrebbe essere generica, dovrebbe innanzitutto chiamarsi Card al singolare.
     dovrebbe poi essere una card generica a cui passi delle proprietà, come ad esempio il titolo, il testo e l'immagine(lo vedrai più avanti, per ora lascia stare).
     in questo modo puoi riutilizzare la card per qualsiasi cosa, non solo per le ville, ma anche per i ristoranti, le spiagge, ecc, proprio ome un contenitore generico. Utile anche per evitare codice duplicato.
     ogni proprietà passata alla card dovrebbe essere verosimilmente un componente, in modo che sia tutto riutilizzabile.

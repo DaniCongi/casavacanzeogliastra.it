@@ -4,23 +4,21 @@ import { useState } from 'react'
 
 import './App.css'
 
-import Header from './components/Header'
+import Layout from "./components/Layout"
 import Hero from './components/Hero'
-import Cards from './components/Cards'
-import Footer from './components/Footer'
 import Banner from './components/Banner'
+import Cards from './components/Cards'
+
 
 
 function App() {
-   return (
-    <>
-        <Header/>
-        <Hero/>
-        <Banner/>
-        <Cards/>
-        <Footer/>
-    </>
-  )
+  return (
+    <Layout>
+      <Hero />
+      <Banner />
+      <Cards />
+    </Layout>
+  );
 }
 
 export default App

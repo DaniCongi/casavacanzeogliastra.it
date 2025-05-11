@@ -3,7 +3,8 @@
     background-color: whitesmoke;
     font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
     font-size: 12px;
-    justify-content: space-between;    
+    justify-content: space-between;
+    height: 200px; 
 }
 
 .footer_text {
@@ -39,5 +40,44 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .col-25 {width: 25%;}
+    .footer {
+        height: 100px; /* Altezza fissa per dispositivi mobili */
+        width: 100%; /* Occupa l'intera larghezza */
+        flex-wrap: nowrap; /* Evita il wrapping del contenuto */
+        font-size: 8px; /* Riduce la dimensione del testo */
+        padding: 0 px; /* Riduce il padding interno */
+    }
+
+    .footer_text,
+    .footer_Privacy_Cookies_Policy,
+    .footer_links,
+    .footer_social {
+        margin: 0; /* Rimuove i margini */
+        padding: 0; /* Rimuove il padding */
+        flex: 1; /* Distribuisce equamente lo spazio tra le sezioni */
+    }
+
+   
+    .footer_social {
+        text-align: right; /* Allinea il contenuto della sezione a destra */
+        margin-left: auto; /* Spinge tutto il contenuto verso destra */
+        display: flex; /* Imposta un layout flessibile */
+        justify-content: flex-end; /* Allinea gli elementi all'interno a destra */
+        align-items: center; /* Centra verticalmente gli elementi */
+    }
+
+    .footer_social img {
+        height: 20px; /* Riduce la dimensione delle immagini social */
+        margin-left: 5px; /* Aggiunge spazio tra le immagini (se ce ne sono più di una) */
+        display: inline-block; /* Assicura che le immagini siano trattate come elementi in linea */
+    }
+
+    .footer_back_to_top {
+        font-size: 8px; /* Riduce la dimensione del testo */
+        margin: 0; /* Rimuove i margini */
+    }
+
+    .logo {
+        display: none; /* Nasconde il logo */
+    }
 }

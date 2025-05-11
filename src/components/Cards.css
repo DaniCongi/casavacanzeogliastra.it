@@ -57,8 +57,8 @@
 /* Media query per dispositivi mobili */
 @media (max-width: 768px) {
     .col-33 {
-        flex: 1 1 calc(50% - 20px); /* Ogni colonna occupa metà dello spazio disponibile */
-        max-width: calc(50% - 20px);
+        flex: 1 1 100%; /* Ogni colonna occupa l'intera larghezza */
+        max-width: 100%;
     }
 }
 
