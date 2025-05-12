@@ -44,6 +44,33 @@ ul {
   list-style: none; /* Assicura che i puntini siano rimossi anche dall'elemento <ul> */
 }
 
+.grid {
+    display: flex;
+    flex-wrap: wrap; /* Permette alle colonne di andare a capo su schermi più piccoli */
+    justify-content: space-between; /* Spaziatura uniforme tra le colonne */
+    gap: 20px; /* Spaziatura tra le card */
+    padding: 20px;
+}
+
+.col-33 {
+    flex: 1 1 calc(33.333% - 20px); /* Ogni colonna occupa un terzo dello spazio disponibile */
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box; /* Include padding e bordo nelle dimensioni */
+}
+
+@media (max-width: 768px) {
+    .col-33 {
+        flex: 1 1 100%; /* Ogni colonna occupa l'intera larghezza */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-33 {
+        flex: 1 1 100%; /* Ogni colonna occupa l'intera larghezza */
+        max-width: 100%;
+    }
+}
 /* Il grid è un sistema di layout a griglia che permette di organizzare gli elementi in righe e colonne. Le classi col-25, col-40, etc definiscono le larghezze delle colonne in percentuale.*/
 
 /* .grid {

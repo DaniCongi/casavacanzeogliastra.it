@@ -1,17 +1,4 @@
-.grid {
-    display: flex;
-    flex-wrap: wrap; /* Permette alle colonne di andare a capo su schermi più piccoli */
-    justify-content: space-between; /* Spaziatura uniforme tra le colonne */
-    gap: 20px; /* Spaziatura tra le card */
-    padding: 20px;
-}
 
-/* Stile per le colonne */
-.col-33 {
-    flex: 1 1 calc(33.333% - 20px); /* Ogni colonna occupa un terzo dello spazio disponibile */
-    max-width: calc(33.333% - 20px);
-    box-sizing: border-box; /* Include padding e bordo nelle dimensioni */
-}
 
 /* Stile per le card */
 .card {
@@ -39,35 +26,21 @@
 .card_text {
     font-size: 14px;
     color: white;
-    margin: 0; /* Rimuovi il margine predefinito */
-    padding: 0px 10px 0px 10px;
-    position: absolute; /* Posiziona l'elemento in modo assoluto rispetto al genitore */
-    bottom: 10px; /* Lo posiziona a 10px dal bordo inferiore */
-    left: 10px; /* Lo posiziona a 10px dal bordo sinistro */
-    background-color: rgb(81, 138, 225);
-    /* border-radius: 5px; Arrotonda leggermente gli angoli dello sfondo */
+    padding: 5px 10px; /* Aggiunge un po' di spazio interno */
+    position: absolute; /* Posiziona il testo rispetto al genitore */
+    bottom: 10px; /* Posiziona il testo a 10px dal bordo inferiore */
+    left: 10px; /* Posiziona il testo a 10px dal bordo sinistro */
+    background-color: rgba(81, 138, 225, 0.9); /* Sfondo semi-trasparente per un effetto più moderno */
+    border-radius: 4px; /* Arrotonda leggermente gli angoli */
     z-index: 1; /* Assicura che il testo sia sopra l'immagine */
-    & > h4{ /* Seleziona l'elemento h4 figlio( &) di card_text */
-        margin: 5px; /* Rimuovi il margine predefinito */
-        font-weight: normal;
-    }
+}
+
+.card_text h4 {
+    margin: 0; /* Rimuove il margine predefinito */
+    font-weight: normal; /* Rende il testo non in grassetto */
 }
 
 
-/* Media query per dispositivi mobili */
-@media (max-width: 768px) {
-    .col-33 {
-        flex: 1 1 100%; /* Ogni colonna occupa l'intera larghezza */
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .col-33 {
-        flex: 1 1 100%; /* Ogni colonna occupa l'intera larghezza */
-        max-width: 100%;
-    }
-}
 
 /* .card {
     display: block;
