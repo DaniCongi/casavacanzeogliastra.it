@@ -1,7 +1,9 @@
-
-
-/* Stile per le card */
+.grid {
+    border: red 1px solid;
+}
 .card {
+    height: 500px;
+    border: red 1px solid;
     display: block;
     background-color: #fff;
     border-radius: 8px;
@@ -17,25 +19,28 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.card img {
+.card_image {
     width: 100%;
     height: auto;
     display: block;
 }
 
 .card_text {
-    font-size: 14px;
-    color: white;
+    font-size: 12px;
+    color: black;
+    background-color: white;
+    margin-top: 16px; /* Spazio sopra il testo */
     padding: 5px 10px; /* Aggiunge un po' di spazio interno */
-    position: absolute; /* Posiziona il testo rispetto al genitore */
-    bottom: 10px; /* Posiziona il testo a 10px dal bordo inferiore */
-    left: 10px; /* Posiziona il testo a 10px dal bordo sinistro */
-    background-color: rgba(81, 138, 225, 0.9); /* Sfondo semi-trasparente per un effetto più moderno */
+    position: static; /* Posiziona il testo rispetto al genitore */
+    /* bottom: 10px; /* Posiziona il testo a 10px dal bordo inferiore */
+    /* left: 10px; Posiziona il testo a 10px dal bordo sinistro 
+    background-color: rgba(81, 138, 225, 0.9); Sfondo semi-trasparente per un effetto più moderno  */
     border-radius: 4px; /* Arrotonda leggermente gli angoli */
     z-index: 1; /* Assicura che il testo sia sopra l'immagine */
 }
 
 .card_text h4 {
+    font-size: 16px; /* Dimensione del font per il titolo */
     margin: 0; /* Rimuove il margine predefinito */
     font-weight: normal; /* Rende il testo non in grassetto */
 }

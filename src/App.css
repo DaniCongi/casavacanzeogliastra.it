@@ -11,6 +11,28 @@ body {
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+h2 {
+  font-size: 32px;
+  margin: 0;
+}
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+h4 {
+  font-size: 18px;
+  margin: 0;
+}
+
+p {
+  line-height: 28px;
+  font-size: 14px;
+}
+
 .button {
   color: white;
   background-color: rgb(81, 138, 225);

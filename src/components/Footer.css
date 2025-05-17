@@ -1,14 +1,19 @@
 .footer {
-    /* border: 1px solid red;  */
+    border: 1px solid red; 
     background-color: whitesmoke;
     font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
     font-size: 12px;
     justify-content: space-between;
-    height: 220px; 
+    
 }
 
 .footer_text {
     padding: 0px 80px 0px 0px;
+}
+
+.footer_text p {
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .footer_Privacy_Cookies_Policy {

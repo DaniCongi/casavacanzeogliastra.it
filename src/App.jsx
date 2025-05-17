@@ -7,7 +7,6 @@ import './App.css'
 import Layout from "./components/Layout"
 import Hero from './components/Hero'
 import Banner from './components/Banner'
-// import CardTailwind from "./components/CardTailwind"
 import Cards from './components/Cards'
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <Hero />
       <Banner />
       <Cards />
-      {/* <CardTailwind /> */}
       </Layout>
   );
 }
