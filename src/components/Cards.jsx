@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'; // Importa Link da react-router-dom
 import './Cards.css';
-import Card from './Card'; // Importa il componente Card
+import Card from "./Card";
+
 
 const cardData = [
   {
@@ -25,12 +25,7 @@ function Cards() {
     <div className="grid">
       {cardData.map((card, index) => (
         <div className="col-33" key={index}>
-          <Link to={card.link} className="card">
-            <img src={card.image} alt={card.title} />
-            <div className="card_text">
-              <h4>{card.title}</h4>
-            </div>
-          </Link>
+          <Card title={card.title} image={card.image} link={card.link} />
         </div>
       ))}
     </div>
