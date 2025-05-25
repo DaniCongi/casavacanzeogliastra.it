@@ -23,8 +23,6 @@
 
 .heroCover_text {
     text-align: center; /* Allinea il testo in basso */
-    font-family: Noto Sans, Montserrat, Open Sans, Lato, Rubik;
-    font-size: 20px;
     padding: 0px;
     color: whitesmoke; 
     position: absolute;

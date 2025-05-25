@@ -1,7 +1,7 @@
 .banner {
     /* border: red 1px solid; */
     display: flex;
-    padding: 50px 10% 50px 10%;
+    padding: 70px 10% 50px 10%;
     height: auto;
 }
 
@@ -9,14 +9,12 @@
     width: 40%;
     margin: 0px;
     padding: 0px 80px 0px 0px;
-    font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
     font-size: 16px;
     position: relative;
     text-align: justify;
 }
 
 .banner_text .button {
-    position: absolute;
     bottom: 0px;
     left: 0px;
 }

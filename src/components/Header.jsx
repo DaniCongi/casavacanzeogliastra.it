@@ -21,7 +21,7 @@ function Header () {
           <li><Link to="/CulturaCucina">Cultura e Cucina</Link></li>
       </ul>
     </nav>
-    <Link to="/Contatti" className="button">Contact</Link>
+    <Link to="/Contatti" className="button">Contattaci</Link>
     <div className="hamburger" onClick={toggleMenu}>
       <span></span>
       <span></span>
