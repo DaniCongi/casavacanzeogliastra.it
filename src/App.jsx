@@ -15,7 +15,7 @@ function App() {
       <Hero />
       <Banner />
       <Cards />
-      </Layout>
+    </Layout>
   );
 }
 
