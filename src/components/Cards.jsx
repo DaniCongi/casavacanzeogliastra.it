@@ -13,13 +13,13 @@ const cardData = [
     title: "Villa Antina",
     image: "./src/img/Antina_1.jpg",
     link: "/Villette",
-    description: "Esplora la bellezza di Villa Antina, un luogo incantevole per il tuo soggiorno.",
+    description: "Scopri Villa Antina, un luogo perfetto per una vacanza in famiglia o tra amici.",
   },
   {
     title: "Villa Congera",
     image: "./src/img/Congera_1.jpg",
     link: "/Villette",
-    description: "Scopri Villa Congera, un rifugio perfetto per una fuga romantica o una vacanza in famiglia.",
+    description: "Scopri Villa Congera, un rifiugio incantevole per il tuo soggiorno.",
   },
 ];
 

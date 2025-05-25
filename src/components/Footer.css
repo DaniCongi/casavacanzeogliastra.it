@@ -1,10 +1,9 @@
 .footer {
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
     background-color: whitesmoke;
     font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
     font-size: 12px;
     justify-content: space-between;
-    
 }
 
 .footer_text {
@@ -46,7 +45,7 @@ ul {
 
 @media (max-width: 768px) {
     .footer {
-        height: 100px; /* Altezza fissa per dispositivi mobili */
+        height: auto; /* Altezza fissa per dispositivi mobili */
         width: 100%; /* Occupa l'intera larghezza */
         flex-wrap: nowrap; /* Evita il wrapping del contenuto */
         font-size: 8px; /* Riduce la dimensione del testo */
@@ -62,7 +61,6 @@ ul {
         flex: 1; /* Distribuisce equamente lo spazio tra le sezioni */
     }
 
-   
     .footer_social {
         text-align: right; /* Allinea il contenuto della sezione a destra */
         margin-left: auto; /* Spinge tutto il contenuto verso destra */
@@ -82,7 +80,5 @@ ul {
         margin: 0; /* Rimuove i margini */
     }
 
-    .logo {
-        display: none; /* Nasconde il logo */
-    }
+  
 }

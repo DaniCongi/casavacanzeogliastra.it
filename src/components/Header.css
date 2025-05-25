@@ -21,7 +21,7 @@
     cursor: pointer; /* Cambia il cursore quando si passa sopra il menu hamburger */
 }
 
-/* Responsive Design - Media query for mobile devices (ovvero rendiamo il sito responsive per i cellulari) */
+
 @media (max-width: 768px) {
     .header {padding-left: 20px; padding-right: 60px; position: relative;}
     .menu {background-color: white; position: absolute; top:100%; right: -100%; width: 100%; height: 100vh; transition: right 0.3s ease; z-index: 10;}

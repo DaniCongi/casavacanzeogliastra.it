@@ -1,5 +1,5 @@
 .banner {
-    border: red 1px solid;
+    /* border: red 1px solid; */
     display: flex;
     padding: 50px 10% 50px 10%;
     height: auto;
@@ -12,6 +12,7 @@
     font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
     font-size: 16px;
     position: relative;
+    text-align: justify;
 }
 
 .banner_text .button {
@@ -21,7 +22,7 @@
 }
 
 .banner_text h3 {
-    line-height: 28px;
+    line-height: 30px;
     margin: 0px;
     padding: 0px;
 }
@@ -34,11 +35,23 @@
 .banner_image img {
     display: block;
     margin: 0 auto;
-    /* box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2); Sfumatura ai bordi */
-    /* border-radius: 10px; Arrotonda leggermente i bordi (opzionale) */
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
 }
 
-/* Responsive Design - Media query for mobile devices (ovvero rendiamo il sito responsive per i cellulari) */
+@media (max-width: 1024px) {
+    .banner {
+        padding: 30px 3%;
+        gap: 20px;
+    }
+    .banner_text {
+        padding: 0 30px 0 0;
+        font-size: 15px;
+    }
+    .banner_text .button {
+        display: none;
+    }
+}
 
 @media (max-width: 768px) {
     .banner {
@@ -55,4 +68,9 @@
         width: 100%; /* Rende l'immagine a larghezza piena */
         padding: 20px 0px 0px 0px; /* Riduce il padding per i dispositivi mobili */
     }
+
+    .banner_text .button {
+        display: none;
+    }
 }
+

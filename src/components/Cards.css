@@ -1,9 +1,9 @@
 .grid {
-    border: red 1px solid;
+    /* border: red 1px solid; */
 }
 .card {
     height: 500px;
-    border: red 1px solid;
+    /* border: red 1px solid; */
     display: block;
     background-color: #fff;
     border-radius: 8px;
@@ -42,29 +42,19 @@
 .card_text h4 {
     font-size: 16px; /* Dimensione del font per il titolo */
     margin: 0; /* Rimuove il margine predefinito */
-    font-weight: normal; /* Rende il testo non in grassetto */
+    /* font-weight: normal; Rende il testo non in grassetto */
 }
 
 
-
-/* .card {
-    display: block;
-    border: 1px solid red; 
-    width: 100%;
-    position: relative;
-   
+@media (max-width: 768px) {
+    .card {
+        height: auto; /* L'altezza si adatta al contenuto */
+        min-height: 0; /* Rimuove eventuali minime */
+    }
 }
 
-.card_text{
-    border: 1px solid red; 
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-    background-color: white;
-    padding: 15px;
-} */
-
-/* .card_text:hover{
-    background-color: rgb(13, 192, 13);
-    color: white;
-} */
+@media (max-width: 1024px) {
+    .card {
+        height: auto; 
+    }
+}
