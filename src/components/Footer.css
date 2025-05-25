@@ -18,11 +18,13 @@
 .footer_Privacy_Cookies_Policy {
     border: 0;
     text-decoration: none;
+    line-height: 18px;
     list-style: none; /* Rimuove i punti elenco */
 } 
 
 .footer_links {
     text-decoration: none;
+    line-height: 18px;
     list-style: none; /* Rimuove i punti elenco */
 }
 
