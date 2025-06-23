@@ -1,6 +1,6 @@
 .header {
     /* border: 1px solid red; */
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
     font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
     font-size: 18px;
     display: flex;
@@ -10,7 +10,7 @@
 }
 
 .logo {
-    height: 80px;
+    height: 100px;
 }
 
 .menu ul {padding: 0;}

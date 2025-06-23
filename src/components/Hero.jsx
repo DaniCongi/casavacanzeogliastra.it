@@ -11,7 +11,7 @@ function Hero () {
           <br />
           <h2>
             <Link to="/DoveSiamo" className="clickable-text">
-             La tua vacanza in <span className="highlight">Sardegna</span> inizia da <span className="highlight">qui</span>!
+             La tua vacanza in <span className="highlight">Sardegna</span> inizia da <span className="highlight">qui</span>
             </Link>
           </h2>
         </div>

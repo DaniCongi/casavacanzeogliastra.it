@@ -7,11 +7,11 @@ function Footer() {
         <div className="grid">
             <div className="col-25">
                 <div className="footer_text">
-                <img src="./src/img/logo_juve.png" alt="Logo Casa Vacanze Ogliastra" className="logo" />
-                <p>Casa Vacanze Ogliastra<br/>Marina di Tertenia<br/>08047 Tertenia (NU)<br/>Sardegna</p>
+                <img src="./src/img/Logo.png" alt="Logo Casa Vacanze Ogliastra" className="logo" />
+                <p>Marina di Tertenia - 08047 Tertenia (NU) - Sardegna</p>
                 </div>
                 <div className="footer_back_to_top">
-                <a href="#top" className="back_to_top">Back to top</a>
+                <a href="#top" className="back_to_top">↑ Torna su</a>
                 </div>
             </div>
             <div className="col-25">
@@ -39,6 +39,9 @@ function Footer() {
                 </div>
             </div>
         </div>
+            <div className="footer_copyright">
+            © {new Date().getFullYear()} Casa Vacanze Ogliastra. Tutti i diritti riservati.
+            </div>
     </footer>
   );
 }

@@ -1,9 +1,10 @@
 .footer {
     /* border: 1px solid red;  */
     background-color: whitesmoke;
-    font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
+    font-family: Open Sans, Rubik, Noto Sans, Montserrat, Lato;
     font-size: 12px;
     justify-content: space-between;
+    position: relative;
 }
 
 .footer_text {
@@ -11,7 +12,7 @@
 }
 
 .footer_text p {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 18px;
 }
 
@@ -38,6 +39,15 @@
 
 .footer_back_to_top {
     color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+}
+
+.footer_copyright {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 ul {
