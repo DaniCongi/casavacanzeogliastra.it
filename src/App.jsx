@@ -8,6 +8,7 @@ import Layout from "./components/Layout"
 import Hero from './components/Hero'
 import Banner from './components/Banner'
 import Cards from './components/Cards'
+import CookieAlert from "./components/CookieAlert"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <Banner />
       <Cards />
+      <CookieAlert />
     </Layout>
   );
 }

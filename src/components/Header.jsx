@@ -33,4 +33,3 @@ function Header () {
 
 export default Header;
 
-/*nel logo ricorda di mettere:Casa Vacanze Ogliastra - La tua vacanza in Sardegna inizia da qui*/
