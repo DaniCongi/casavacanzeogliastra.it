@@ -7,19 +7,19 @@ const cardData = [
     title: "Dove Siamo",
     image: "./src/img/Marina_1.jpg",
     link: "/DoveSiamo",
-    description: "Scopri la nostra posizione e come raggiungerci facilmente.",
+    description: "La nostra posizione e come raggiungerci facilmente.",
   },
   {
     title: "Villa Antina",
     image: "./src/img/Antina_1.jpg",
     link: "/Villette",
-    description: "Scopri Villa Antina, un luogo perfetto per una vacanza in famiglia o tra amici.",
+    description: "Villa Antina, un luogo perfetto per una vacanza in famiglia o tra amici.",
   },
   {
     title: "Villa Congera",
     image: "./src/img/Congera_1.jpg",
     link: "/Villette",
-    description: "Scopri Villa Congera, un rifiugio incantevole per il tuo soggiorno.",
+    description: "Villa Congera, un rifiugio incantevole per il tuo soggiorno.",
   },
 ];
 

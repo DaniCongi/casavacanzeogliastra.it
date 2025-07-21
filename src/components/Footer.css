@@ -1,8 +1,8 @@
 .footer {
     /* border: 1px solid red;  */
     background-color: whitesmoke;
-    font-family: Open Sans, Rubik, Noto Sans, Montserrat, Lato;
-    font-size: 12px;
+    font-family: Inter, Open Sans, Rubik, Noto Sans, Montserrat, Lato;
+    font-size: 11px;
     justify-content: space-between;
     position: relative;
 }
@@ -68,6 +68,7 @@ ul {
     .footer_Privacy_Cookies_Policy,
     .footer_links,
     .footer_social {
+        font-size: 11 px;
         margin: 0; /* Rimuove i margini */
         padding: 0; /* Rimuove il padding */
         flex: 1; /* Distribuisce equamente lo spazio tra le sezioni */

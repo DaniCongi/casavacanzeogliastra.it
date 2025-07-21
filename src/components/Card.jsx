@@ -6,8 +6,9 @@ function Card({ title, image, link, description }) {
             <Link to={link}>
                 <img className="card_image" src={image} alt={title} />
                 <div className="card_text">
-                    <h4 className="highlight">{title}</h4>
+                    <h4>{title}</h4>
                     <p>{description}</p>
+                    <h5 className="card_explore">ESPLORA</h5>
                 </div>
             </Link>
         </div>

@@ -7,7 +7,7 @@ function Hero () {
     <hero className="heroCover">
         <div className="heroCover_filter"></div>
         <div className="heroCover_text">
-          <h1> Casa Vacanze Ogliastra</h1> 
+          <h1> CASA VACANZE OGLIASTRA</h1> 
           <br />
           <h2>
             <Link to="/DoveSiamo" className="clickable-text">
