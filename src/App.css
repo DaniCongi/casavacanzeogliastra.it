@@ -37,7 +37,7 @@ h5 {
   font-size: 14px;
   }
 
-p {
+p, ul, li {
   line-height: 28px;
   font-size: 14px;
 }
@@ -91,6 +91,16 @@ ul {
     box-sizing: border-box; /* Include padding e bordo nelle dimensioni */
 }
 
+.section-separator {
+  width: 80px;
+  height: 3px;
+  background: #518ae1;
+  border: none;
+  border-radius: 2px;
+  margin: 32px auto 24px auto;
+  opacity: 0.8;
+}
+
 @media (max-width: 768px) {
     .col-33 {
         flex: 1 1 100%; /* Ogni colonna occupa l'intera larghezza */
@@ -130,4 +140,6 @@ justify-content: space-between;
     .col-60 {width: 100%;}
     .col-100 {width: 100%;}
 } */
+
+
 

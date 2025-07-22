@@ -18,6 +18,7 @@ function App() {
       <Banner />
       <Cards />
       <VideoSection />
+      <hr className="section-separator" />
       <CookieAlert />
     </Layout>
   );
