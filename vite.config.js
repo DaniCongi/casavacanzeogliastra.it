@@ -5,6 +5,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 
 export default defineConfig({
-  base: '/casavacanzeogliastra.it/',
-  plugins: [react()],
+ plugins: [react()],
 })
