@@ -12,7 +12,7 @@ function Banner() {
                 <Link to="/Villette" className="button"> Scopri di più </Link>
         </div>
         <div className="banner_image">
-            <img src="./src/img/img1_index.jpg" alt="Casa Vacanze Ogliastra" className="img_resp"/>
+            <img src="./img/img1_index.jpg" alt="Casa Vacanze Ogliastra" className="img_resp"/>
         </div>
     </banner>
   );

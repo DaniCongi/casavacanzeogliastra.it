@@ -7,7 +7,7 @@ function Footer() {
         <div className="grid">
             <div className="col-25">
                 <div className="footer_text">
-                <img src="./src/img/Logo.png" alt="Logo Casa Vacanze Ogliastra" className="logo" />
+                <img src="./img/Logo.png" alt="Logo Casa Vacanze Ogliastra" className="logo" />
                 <p>Marina di Tertenia - 08047 Tertenia (NU) - Sardegna</p>
                 </div>
                 <div className="footer_back_to_top">

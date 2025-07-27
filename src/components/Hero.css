@@ -4,7 +4,7 @@
     height: 75vh;
     justify-content: center;
     align-items: center; /* Allinea verticalmente al centro */
-    background-image: url("./src/img/Cover_1.jpg");
+    background-image: url("/img/Cover_1.jpg");
     background-size:cover; /* Copre l'intera area del contenitore */
     background-position: bottom;
     background-repeat: no-repeat; /* Non ripete l'immagine di sfondo */

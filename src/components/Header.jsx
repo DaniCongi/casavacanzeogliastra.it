@@ -12,7 +12,7 @@ function Header () {
   };
   return (
     <header className="header">
-    <img src="./src/img/Logo.png" alt="Logo Casa Vacanze Ogliastra" className="logo" />
+    <img src="./img/Logo.png" alt="Logo Casa Vacanze Ogliastra" className="logo" />
     <nav className={`menu ${isOpen ? 'open' : ''}`}>
       <ul>
           <li><Link to="/">Home</Link></li>
