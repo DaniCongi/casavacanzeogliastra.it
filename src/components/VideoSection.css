@@ -11,8 +11,8 @@
   padding: 0;
 }
 
-.video-section h2 {
-  font-family: 'Montserrat', 'Inter', sans-serif;
+.video-section h3 {
+  font-family: 'Playfair Display', serif;
   font-size: 2rem;
   margin-bottom: 18px;
 }
@@ -35,13 +35,13 @@
   display: block;
 }
 
-.video-phrase {
+.video-phrase h3 {
   position: absolute;
   left: 50%;
   bottom: 32px;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-family: 'Montserrat', 'Inter', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 2rem;
   font-weight: bold;
   font-style: italic;
