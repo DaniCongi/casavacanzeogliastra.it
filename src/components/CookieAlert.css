@@ -9,8 +9,9 @@
   text-align: center;
   z-index: 9999;
   font-size: 12px;
+  font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
-  font-size: large
+  
 }
 .cookie-alert a {
   font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
@@ -20,15 +21,26 @@
 }
 .cookie-alert button {
   color: white;
-  font-size: 16px;
+  font-size: 12px;
+  font-size: bold;
   font-family: Rubik, Noto Sans, Montserrat, Open Sans, Lato;
-  background-color: #518ae1;
+  background-color: white;
+  color: black;
   display: inline-block;
-  padding: 12px 18px;
+  padding: 4px 16px;
+  margin: 0px 8px;
   text-decoration: none;
+  border-radius: 16px;
 }
 
 .cookie-alert button:hover {
   background-color: #0dc00d;
   color: white;
+}
+
+.cookie-emoji {
+  font-size: 24px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
 }

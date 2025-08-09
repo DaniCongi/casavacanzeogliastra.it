@@ -9,7 +9,7 @@ function VideoSection() {
           Il tuo browser non supporta il tag video.
         </video>
         <div className="video-phrase">
-          <h3>Le persone non fanno i viaggi, sono i viaggi che fanno le persone</h3>
+          <h3>L'estate è uno stato mentale</h3>
         </div>
       </div>
     </section>

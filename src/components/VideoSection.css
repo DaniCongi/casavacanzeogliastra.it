@@ -13,7 +13,7 @@
 
 .video-section h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-bottom: 18px;
 }
 
@@ -43,7 +43,7 @@
   color: #fff;
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: normal;
   font-style: italic;
   text-shadow: 2px 2px 8px #000, 0 0 16px #000;
   pointer-events: none;
@@ -51,4 +51,30 @@
   max-width: 900px;
   text-align: center;
   z-index: 2;
+}
+
+/* Media queries per smartphone */
+@media (max-width: 768px) {
+  .video-container video {
+    height: 300px; /* Riduce l'altezza del video su mobile */
+  }
+
+  .video-phrase h3 {
+    font-size: 1.2rem; /* Riduce la dimensione del testo */
+    bottom: 20px; /* Avvicina il testo al bordo inferiore */
+    width: 95vw; /* Aumenta la larghezza per schermi piccoli */
+    padding: 0 10px; /* Aggiunge padding laterale */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container video {
+    height: 250px; /* Riduce ulteriormente l'altezza per smartphone */
+  }
+
+  .video-phrase h3 {
+    font-size: 1rem; /* Testo ancora più piccolo per smartphone */
+    bottom: 15px; /* Posizione più vicina al bordo */
+    line-height: 1.2; /* Migliora l'interlinea per la leggibilità */
+  }
 }

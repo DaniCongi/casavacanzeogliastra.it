@@ -51,7 +51,7 @@
     }
 
     .heroCover_text {
-        font-size: 16px; /* Riduce la dimensione del testo */
+        font-size: 14px; /* Riduce la dimensione del testo */
         padding: 10px; /* Aggiunge un po' di spazio interno */
     }
 }
@@ -63,8 +63,17 @@
         background-position: center; 
     }
 
+    h1 {
+        font-size: 20px; /* Riduce ulteriormente la dimensione del testo */
+        margin-bottom: 15px; /* Aggiunge spazio sotto h1 */
+    }
+
+    h2 {
+        font-size: 14px; /* Riduce ulteriormente la dimensione del testo */
+        margin-top: 15px; /* Aggiunge spazio sopra h2 */
+    }
+
     .heroCover_text {
-        font-size: 12px; /* Riduce ulteriormente la dimensione del testo */
         padding: 0px; /* Riduce il padding */
     }
 }

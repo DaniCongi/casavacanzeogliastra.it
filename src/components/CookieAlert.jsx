@@ -15,7 +15,7 @@ function CookieAlert() {
 
   return (
     <div className="cookie-alert">
-      Questo sito utilizza cookie tecnici e di terze parti per migliorare l’esperienza di navigazione. 
+     <span className="cookie-emoji">🍪</span> Questo sito utilizza cookie tecnici e di terze parti per migliorare l’esperienza di navigazione. 
       <a href="/cookies.html" target="_blank" rel="noopener noreferrer">Maggiori info</a>
       <button onClick={acceptCookies}>Accetta</button>
     </div>
