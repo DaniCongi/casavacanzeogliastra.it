@@ -64,12 +64,12 @@
     }
 
     h1 {
-        font-size: 20px; /* Riduce ulteriormente la dimensione del testo */
+        font-size: 30px; /* Riduce ulteriormente la dimensione del testo */
         margin-bottom: 15px; /* Aggiunge spazio sotto h1 */
     }
 
     h2 {
-        font-size: 14px; /* Riduce ulteriormente la dimensione del testo */
+        font-size: 18px; /* Riduce ulteriormente la dimensione del testo */
         margin-top: 15px; /* Aggiunge spazio sopra h2 */
     }
 

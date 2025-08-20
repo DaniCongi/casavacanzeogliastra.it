@@ -80,15 +80,30 @@ ul {
 .grid {
     display: flex;
     flex-wrap: wrap; /* Permette alle colonne di andare a capo su schermi più piccoli */
-    justify-content: space-between; /* Spaziatura uniforme tra le colonne */
+    justify-content: space-between; /* Spaziatura uniforme tra le colonne - ripristinato per il footer */
     gap: 20px; /* Spaziatura tra le card */
     padding: 20px;
+}
+
+/* Regole specifiche per le Cards */
+.cards-grid {
+    justify-content: center; /* Centra le card su schermi grandi */
+    max-width: 95%; /* Aumentato per occupare quasi tutto lo schermo */
+    margin: 0 auto; /* Centra il grid */
 }
 
 .col-33 {
     flex: 1 1 calc(33.333% - 20px); /* Ogni colonna occupa un terzo dello spazio disponibile */
     max-width: calc(33.333% - 20px);
+    min-width: 280px; /* Larghezza minima per evitare card troppo strette */
     box-sizing: border-box; /* Include padding e bordo nelle dimensioni */
+}
+
+/* Classe per il Footer - 4 colonne */
+.col-25 {
+    flex: 1 1 calc(25% - 15px); /* Ogni colonna occupa un quarto dello spazio disponibile */
+    max-width: calc(25% - 15px);
+    box-sizing: border-box;
 }
 
 .section-separator {
@@ -106,6 +121,11 @@ ul {
         flex: 1 1 100%; /* Ogni colonna occupa l'intera larghezza */
         max-width: 100%;
     }
+    
+    .col-25 {
+        flex: 1 1 100%; /* Footer a colonna singola su mobile */
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -113,33 +133,52 @@ ul {
         flex: 1 1 100%; /* Ogni colonna occupa l'intera larghezza */
         max-width: 100%;
     }
+    
+    .col-25 {
+        flex: 1 1 100%; /* Footer a colonna singola su smartphone */
+        max-width: 100%;
+    }
 }
-/* Il grid è un sistema di layout a griglia che permette di organizzare gli elementi in righe e colonne. Le classi col-25, col-40, etc definiscono le larghezze delle colonne in percentuale.*/
 
-/* .grid {
-border: 1px solid rgb(79, 237, 54);
-display: flex;
-flex-wrap: wrap; 
-padding: 30px 10% 30px 10%;
-justify-content: space-between;
+/* Media queries per schermi grandi - SOLO per le Cards */
+@media (min-width: 1200px) {
+    .cards-grid {
+        gap: 50px; /* Aumentato da 30px a 50px */
+        padding: 40px 20px;
+        max-width: 95%; /* Occupa quasi tutto lo schermo */
+    }
+    
+    .cards-grid .col-33 {
+        max-width: calc(33.333% - 35px); /* Card più larghe, considera il gap */
+        flex: 1 1 calc(33.333% - 35px);
+        min-width: 350px; /* Larghezza minima aumentata */
+    }
+}
 
-} 
+@media (min-width: 1600px) {
+    .cards-grid {
+        gap: 70px; /* Aumentato da 40px a 70px */
+        padding: 60px 40px; /* Padding laterale aumentato */
+        max-width: 95%; /* Occupa quasi tutto lo schermo */
+    }
+    
+    .cards-grid .col-33 {
+        max-width: calc(33.333% - 50px); /* Card ancora più larghe */
+        flex: 1 1 calc(33.333% - 50px);
+        min-width: 400px; /* Larghezza minima ancora maggiore */
+    }
+}
 
-.col-25 {width: 25%; border: 1px solid red;}
-.col-33 {width: 33%;}
-.col-40 {width: 40%;}
-.col-50 {width: 50%;}
-.col-60 {width: 60%;} 
-.col-100 {width: 100%;}
-
-@media (max-width: 768px) {
-    .col-25 {width: 100%;}
-    .col-33 {width: 100%;}
-    .col-40 {width: 100%;}
-    .col-50 {width: 100%;}
-    .col-60 {width: 100%;}
-    .col-100 {width: 100%;}
-} */
-
-
-
+@media (min-width: 2000px) {
+    .cards-grid {
+        gap: 80px; /* Gap ancora maggiore per schermi molto grandi */
+        padding: 80px 60px;
+        max-width: 95%;
+    }
+    
+    .cards-grid .col-33 {
+        max-width: calc(33.333% - 55px); /* Card ottimizzate per schermi 4K */
+        flex: 1 1 calc(33.333% - 55px);
+        min-width: 450px;
+    }
+}

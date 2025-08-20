@@ -19,15 +19,15 @@ const cardData = [
     title: "Villa Congera",
     image: "/img/Congera_1.jpg",
     link: "/Villette",
-    description: "Villa Congera, un rifiugio incantevole per il tuo soggiorno.",
+    description: "Villa Congera, un rifiugio incantevole per il tuo soggiorno in Sardegna.",
   },
 ];
 
 function Cards() {
   return (
-    <div className="grid">
+    <div className="grid cards-grid">
       {cardData.map((card, index) => (
-        <div className="col-33" key={index}>
+        <div className="col-33 cards-col" key={index}>
           <Card title={card.title} image={card.image} link={card.link} description={card.description}/>
         </div>
       ))}

@@ -19,6 +19,11 @@
     left: 0px;
 }
 
+.banner_text li {
+        font-size: 14px;
+        line-height: 28px;
+}
+
 .banner_text h3 {
     line-height: 30px;
     margin: 0px;
@@ -33,6 +38,8 @@
 .banner_image img {
     display: block;
     margin: 0 auto;
+    max-width: 80%; /* Limita la larghezza massima dell'immagine */
+    height: auto;
     /* box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);  */
     /* border-radius: 8px;  */
 }
@@ -48,6 +55,11 @@
     }
     .banner_text .button {
         display: none;
+    }
+
+    .banner_text li {
+    font-size: 14px;
+    line-height: 28px;
     }
 }
 
@@ -70,5 +82,32 @@
     .banner_text .button {
         display: none;
     }
+
+    .banner_text li {
+        font-size: 14px;
+        line-height: 28px;
+    }
 }
+
+/* Media queries per schermi grandi - controlla dimensione immagine */
+@media (min-width: 1200px) {
+    .banner_image img {
+        max-width: 70%; /* Riduce ulteriormente su schermi grandi */
+    }
+}
+
+@media (min-width: 1600px) {
+    .banner_image img {
+        max-width: 60%; /* Ancora più piccola su schermi molto grandi */
+    }
+}
+
+@media (min-width: 2000px) {
+    .banner_image img {
+        max-width: 50%; /* Dimensione ottimale per schermi 4K */
+    }
+}
+
+
+
 

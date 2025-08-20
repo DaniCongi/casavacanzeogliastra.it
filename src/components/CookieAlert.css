@@ -44,3 +44,48 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+/* Media queries per smartphone */
+@media (max-width: 768px) {
+  .cookie-alert {
+    padding: 12px 8px; /* Riduce il padding per schermi più piccoli */
+    font-size: 11px; /* Leggermente più piccolo su tablet */
+    text-align: left; /* Allinea il testo a sinistra per una migliore lettura */
+  }
+
+  .cookie-alert button {
+    font-size: 11px; /* Riduce la dimensione del pulsante */
+    padding: 6px 12px; /* Adatta il padding */
+    margin: 5px 4px; /* Riduce il margine */
+  }
+
+  .cookie-emoji {
+    font-size: 20px; /* Riduce leggermente l'emoji */
+    margin-right: 8px; /* Riduce il margine */
+  }
+}
+
+@media (max-width: 480px) {
+  .cookie-alert {
+    padding: 10px 6px; /* Padding ancora più ridotto per smartphone */
+    font-size: 10px; /* Testo più piccolo */
+    line-height: 1.4; /* Migliora la leggibilità */
+  }
+
+  .cookie-alert a {
+    margin: 0 5px; /* Riduce il margine dei link */
+    display: inline-block; /* Migliora la disposizione */
+  }
+
+  .cookie-alert button {
+    font-size: 10px; /* Pulsante più piccolo */
+    padding: 5px 10px; /* Padding ridotto */
+    margin: 3px 2px; /* Margini minimi */
+    border-radius: 12px; /* Bordi meno arrotondati */
+  }
+
+  .cookie-emoji {
+    font-size: 18px; /* Emoji più piccola per smartphone */
+    margin-right: 6px; /* Margine ridotto */
+  }
+}
