@@ -33,11 +33,19 @@ function GalleryDoveSiamo() {
     },
     {
       src: './img/DoveSiamo8.jpg',
-      alt: 'Spiaggia di Tertenia - -tramonto'
+      alt: 'Spiaggia di Tertenia - tramonto'
     },
     {
       src: './img/DoveSiamo9.jpg',
       alt: 'Spiaggia di Tertenia - Spiaggetta'
+    },
+    {
+      src: './img/DoveSiamo10.jpg',
+      alt: 'Spiaggia di Melisenda - tramonto'
+    },
+    {
+      src: './img/DoveSiamo11.jpg',
+      alt: 'Spiaggia di Tertenia - Spiaggia di Foxi Manna'
     },
   ];
 

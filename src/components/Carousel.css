@@ -168,8 +168,8 @@
 
 .carousel-hero .carousel-container {
   width: 100%;
-  height: 95vh; /* Aumentato da 90vh a 95vh */
-  min-height: 800px; /* Aumentato da 700px a 800px */
+  height: 75vh; /* Aumentato da 60vh a 75vh per un migliore equilibrio */
+  min-height: 550px; /* Aumentato da 450px a 550px */
   border-radius: 0;
   box-shadow: none;
 }
@@ -224,8 +224,8 @@
 /* Responsive per carousel hero */
 @media (max-width: 768px) {
   .carousel-hero .carousel-container {
-    height: 85vh; /* Aumentato da 75vh a 85vh */
-    min-height: 600px; /* Aumentato da 500px a 600px */
+    height: 65vh; /* Aumentato da 50vh a 65vh */
+    min-height: 450px; /* Aumentato da 350px a 450px */
   }
   
   .carousel-hero .carousel-caption {
@@ -250,8 +250,8 @@
 
 @media (max-width: 480px) {
   .carousel-hero .carousel-container {
-    height: 70vh; /* Aumentato da 60vh a 70vh */
-    min-height: 450px; /* Aumentato da 400px a 450px */
+    height: 55vh; /* Aumentato da 40vh a 55vh */
+    min-height: 380px; /* Aumentato da 300px a 380px */
   }
   
   .carousel-hero .carousel-caption {
