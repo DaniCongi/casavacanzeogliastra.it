@@ -74,10 +74,6 @@
         padding: 0px; /* Rimuove il padding per i dispositivi mobili */
     }
 
-    .banner_image {
-        display: none; /* Nasconde completamente l'immagine sui dispositivi mobili */
-    }
-
     .banner_text .button {
         display: none;
     }
@@ -85,6 +81,13 @@
     .banner_text li {
         font-size: 14px;
         line-height: 28px;
+    }
+}
+
+/* Nasconde l'immagine del banner solo sui cellulari */
+@media (max-width: 480px) {
+    .banner_image {
+        display: none !important;
     }
 }
 

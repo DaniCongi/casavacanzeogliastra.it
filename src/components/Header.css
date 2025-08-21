@@ -135,24 +135,15 @@
 
     .open .menu {right: 0;}
     
-    /* Overlay per chiudere il menu */
-    .menu::before {
-        content: '';
+    /* Overlay per chiudere il menu mobile */
+    .menu-overlay {
         position: fixed;
         top: 0;
-        left: -100vw;
+        left: 0;
         width: 100vw;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        transition: opacity 0.4s ease;
-        pointer-events: none;
-    }
-    
-    .open .menu::before {
-        left: 0;
-        opacity: 1;
-        pointer-events: auto;
+        z-index: 14;
     }
     
     .hamburger {

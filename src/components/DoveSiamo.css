@@ -1,5 +1,3 @@
-/* Stili specifici per la pagina DoveSiamo */
-
 /* Override del banner per DoveSiamo - mostra l'immagine anche su mobile */
 @media (max-width: 768px) {
     .banner .banner_image {
@@ -38,11 +36,11 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.beaches .beach-info h3 {
+.beaches .beach-info h4 {
     color: #518ae1;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 15px;
-    font-family: 'Rubik', 'Noto Sans', 'Montserrat', 'Open Sans', 'Lato', sans-serif;
+    /* font-family: 'Rubik', 'Noto Sans', 'Montserrat', 'Open Sans', 'Lato', sans-serif; */
     font-weight: 600;
 }
 
@@ -68,12 +66,12 @@
     }
     
     .beach-info h3 {
-        font-size: 20px;
+        /* font-size: 20px; */
         margin-bottom: 10px;
     }
     
     .beach-info p {
-        font-size: 14px;
+        /* font-size: 14px; */
         line-height: 24px;
     }
 }
@@ -92,11 +90,11 @@
     }
     
     .beach-info h3 {
-        font-size: 18px;
+        /* font-size: 18px; */
     }
     
     .beach-info p {
-        font-size: 13px;
+        /* font-size: 13px; */
         line-height: 22px;
     }
 }

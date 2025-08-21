@@ -41,7 +41,7 @@ function DoveSiamo() {
 
      <div className="beaches">
           <div className="beach-info">
-            <h3>🏖️ Spiaggia di Foxi Manna</h3>
+            <h4>🏖️ Spiaggia di Foxi Manna</h4>
             <p>
               La più grande della Marina, lunga circa un chilometro, si posiziona ai piedi 
               del bellissimo Monte Cartucceddu. La sabbia è finissima e chiara, mentre 
@@ -50,7 +50,7 @@ function DoveSiamo() {
           </div>
           
           <div className="beach-info">
-            <h3>🏖️ Spiaggia di Melisenda</h3>
+            <h4>🏖️ Spiaggia di Melisenda</h4>
             <p>
               Anche conosciuta come Foxi Murdegu, è dominata dalla torre di avvistamento 
               spagnola di San Giovanni. Il mare presenta un fondale basso e sabbioso, 

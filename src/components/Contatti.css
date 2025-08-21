@@ -2,7 +2,7 @@
 
 .contatti {
     padding: 70px 10% 50px 10%;
-    font-size: 16px;
+    font-size: 14px;
     position: relative;
     text-align: justify;
 }
@@ -25,7 +25,7 @@
 }
 
 .contatti p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 28px;
     margin: 15px 0;
     color: #333;

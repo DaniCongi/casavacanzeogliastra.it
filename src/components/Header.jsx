@@ -20,12 +20,8 @@ function Header () {
     <>
     <header className="header">
     <img src="./img/Logo.png" alt="Logo Casa Vacanze Ogliastra" className="logo" />
-    <nav className={`menu ${isOpen ? 'open' : ''}`} onClick={(e) => {
-      // Chiude il menu se si clicca sull'overlay
-      if (e.target === e.currentTarget) {
-        closeMenu();
-      }
-    }}>
+    {isOpen && <div className="menu-overlay" onClick={closeMenu}></div>}
+    <nav className={`menu ${isOpen ? 'open' : ''}`}>
       <ul>
           <li><Link to="/" onClick={closeMenu}>Home</Link></li>
           <li><Link to="/DoveSiamo" onClick={closeMenu}>Dove Siamo</Link></li>
