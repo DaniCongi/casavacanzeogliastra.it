@@ -1,0 +1,119 @@
+.villette .cards-grid {
+    padding: 0 10% 50px 10%; /* Rimuovo il padding superiore per evitare conflitti */
+    margin: 0; /* Rimuovo il margin auto che centra il container */
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: none; /* Rimuovo la limitazione di larghezza */
+}
+
+/* Aumenta la grandezza delle card in villette - solo 2 card */
+.villette .cards-grid .col-33 {
+    flex: 1 1 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    min-width: 300px;
+}
+
+/* Regole specifiche per le card in villette */
+.villette .card {
+    height: auto; /* Permetti alle card di adattarsi al contenuto */
+    min-height: 500px; /* Altezza minima per mantenere consistenza */
+}
+
+.villette .card_image {
+    height: 300px; /* Altezza fissa per l'immagine */
+    object-fit: cover; /* Mantieni proporzioni dell'immagine */
+}
+
+.villette .card_text {
+    padding: 15px 20px; /* Più spazio per il testo */
+    min-height: 120px; /* Spazio minimo per il testo descrittivo */
+}
+
+/* Media queries per villette */
+@media (max-width: 768px) {
+    .villette .cards-grid .col-33 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .villette .cards-grid {
+        gap: 50px;
+    }
+    
+    .villette .cards-grid .col-33 {
+        flex: 1 1 calc(50% - 25px);
+        max-width: calc(50% - 25px);
+        min-width: 400px;
+    }
+    
+    .villette .card {
+        min-height: 550px;
+    }
+    
+    .villette .card_image {
+        height: 350px;
+    }
+    
+    .villette .card_text {
+        padding: 20px 25px;
+        min-height: 140px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .villette .cards-grid {
+        gap: 70px;
+    }
+    
+    .villette .cards-grid .col-33 {
+        flex: 1 1 calc(50% - 35px);
+        max-width: calc(50% - 35px);
+        min-width: 450px;
+    }
+    
+    .villette .card {
+        min-height: 600px;
+    }
+    
+    .villette .card_image {
+        height: 380px;
+    }
+    
+    .villette .card_text {
+        padding: 25px 30px;
+        min-height: 160px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .villette .cards-grid {
+        gap: 80px;
+        padding: 0 8% 50px 8%; /* Riduci leggermente il padding per schermi 4K */
+    }
+    
+    .villette .cards-grid .col-33 {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+        min-width: 500px;
+    }
+    
+    .villette .card {
+        min-height: 650px;
+    }
+    
+    .villette .card_image {
+        height: 400px;
+    }
+    
+    .villette .card_text {
+        padding: 30px 35px;
+        min-height: 180px;
+    }
+}
+
+
+
+

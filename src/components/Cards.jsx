@@ -12,13 +12,13 @@ const cardData = [
   {
     title: "Villa Antina",
     image: "/img/Antina_1.jpg",
-    link: "/Villette",
+    link: "/VillaAntina",
     description: "Villa Antina, un luogo perfetto per una vacanza in famiglia o tra amici.",
   },
   {
     title: "Villa Congera",
     image: "/img/Congera_1.jpg",
-    link: "/Villette",
+    link: "/VillaCongera",
     description: "Villa Congera, un rifiugio incantevole per il tuo soggiorno in Sardegna.",
   },
 ];

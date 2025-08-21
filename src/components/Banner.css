@@ -38,10 +38,10 @@
 .banner_image img {
     display: block;
     margin: 0 auto;
-    max-width: 80%; /* Limita la larghezza massima dell'immagine */
+    max-width: 100%; /* Aumentato per rendere l'immagine più grande */
     height: auto;
     /* box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);  */
-    /* border-radius: 8px;  */
+    border-radius: 20px; 
 }
 
 @media (max-width: 1024px) {
@@ -92,19 +92,19 @@
 /* Media queries per schermi grandi - controlla dimensione immagine */
 @media (min-width: 1200px) {
     .banner_image img {
-        max-width: 70%; /* Riduce ulteriormente su schermi grandi */
+        max-width: 90%; /* Aumentato da 70% a 90% */
     }
 }
 
 @media (min-width: 1600px) {
     .banner_image img {
-        max-width: 60%; /* Ancora più piccola su schermi molto grandi */
+        max-width: 80%; /* Aumentato da 60% a 85% */
     }
 }
 
 @media (min-width: 2000px) {
     .banner_image img {
-        max-width: 50%; /* Dimensione ottimale per schermi 4K */
+        max-width: 80%; /* Aumentato da 50% a 80% per schermi 4K */
     }
 }
 

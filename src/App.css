@@ -116,6 +116,17 @@ ul {
   opacity: 0.8;
 }
 
+.villette_text,
+.villaAntina,
+.villaCongera,
+.culturaCucina,
+.contatti {
+    padding: 70px 10% 50px 10%;
+    font-size: 16px;
+    position: relative;
+    text-align: justify;
+}
+
 @media (max-width: 768px) {
     .col-33 {
         flex: 1 1 100%; /* Ogni colonna occupa l'intera larghezza */

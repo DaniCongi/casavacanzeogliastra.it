@@ -9,10 +9,16 @@
 
 .footer .grid {
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Allinea le colonne in alto */
+    gap: 20px;
+    padding: 30px 20px;
 }
 
 .footer_text {
-    padding: 0px 80px 0px 0px;
+    padding: 0px 10px 0px 0px; /* Ridotto da 80px a 10px */
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Allinea logo e testo a sinistra */
@@ -79,4 +85,37 @@ ul, li {
     .footer_back_to_top {
         display: none; /* Nasconde il pulsante "Torna su" su smartphone */
     }
+}
+
+/* Media query per schermi medi (laptop 13-15 pollici) */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .footer .col-25 {
+        flex: 1 1 calc(25% - 10px); /* Riduci il gap per schermi medi */
+        max-width: calc(25% - 10px);
+        min-width: 200px; /* Larghezza minima per evitare che le colonne siano troppo strette */
+    }
+    
+    .footer .grid {
+        gap: 15px; /* Gap più piccolo per ottimizzare lo spazio */
+        padding: 20px 15px; /* Padding ridotto per schermi medi */
+    }
+    
+    .footer_text {
+        padding: 0px 5px 0px 0px; /* Padding minimo per schermi medi */
+    }
+    
+    .footer_text p {
+        font-size: 9px; /* Font leggermente più piccolo per ottimizzare lo spazio */
+        line-height: 16px;
+    }
+    
+    ul, li {
+        font-size: 9px; /* Font più piccolo per i link */
+    }
+}
+
+/* Regola generale per uniformare tutte le sezioni del footer */
+.footer .col-25 > div {
+    width: 100%;
+    box-sizing: border-box;
 }

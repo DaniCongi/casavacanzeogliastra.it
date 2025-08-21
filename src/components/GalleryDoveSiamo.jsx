@@ -1,7 +1,7 @@
 import Carousel from './Carousel';
+import './Gallery.css';
 
 function GalleryDoveSiamo() {
-  // Immagini per la galleria "Dove Siamo" - luoghi e panorami dell'Ogliastra
   const carouselImages = [
     {
       src: './img/DoveSiamo1.jpg',
@@ -50,12 +50,7 @@ function GalleryDoveSiamo() {
   ];
 
   return (
-    <div style={{ 
-      width: '100%',
-      margin: '0',
-      padding: '0'
-    }}>
-      {/* Carosello full-width e altezza maggiore - senza titolo e caption */}
+    <div className="gallery-dovesiamo-container">
       <Carousel 
         images={carouselImages} 
         autoPlay={true} 
