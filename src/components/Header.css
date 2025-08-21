@@ -22,41 +22,172 @@
     cursor: pointer; /* Cambia il cursore quando si passa sopra il menu hamburger */
 }
 
+/* Pulsante WhatsApp fisso */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    text-decoration: none;
+}
 
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+/* Nasconde WhatsApp su desktop, mostra solo su mobile */
+@media (min-width: 769px) {
+    .whatsapp-button {
+        display: none;
+    }
+}
+
+
+
+/* Visibilità per desktop e mobile */
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: inline-block;
+}
 
 @media (max-width: 768px) {
-    .header {padding-left: 20px; padding-right: 60px; position: relative;}
-    .menu {background-color: white; position: absolute; top:100%; right: -100%; width: 100%; height: 100vh; transition: right 0.3s ease; z-index: 10;}
-    .menu li {width: 100%;}
+    .mobile-only {
+        display: block;
+    }
+    
+    .desktop-only {
+        display: none;
+    }
+    
+    .logo {
+        height: 70px;
+    }
+    
+    .header {padding-left: 20px; padding-right: 20px; position: relative;}
+    
+    /* Menu mobile migliorato */
+    .menu {
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 15;
+        padding-top: 80px;
+        border-left: 1px solid #e0e0e0;
+    }
+    
+    .menu li {
+        width: 100%;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .menu a {
+        padding: 18px 25px;
+        font-size: 16px;
+        color: #333;
+        transition: all 0.3s ease;
+    }
+    
+    .menu a:hover {
+        background-color: #f8f9fa;
+        color: #518ae1;
+        padding-left: 35px;
+    }
 
     .open .menu {right: 0;}
     
+    /* Overlay per chiudere il menu */
+    .menu::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        pointer-events: none;
+    }
+    
+    .open .menu::before {
+        left: 0;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
     .hamburger {
         display: block; /* Mostra il menu hamburger per i dispositivi mobili */
-        top: 55px;
-        right: 5px;
-        height: 25px;
-        width: 30px;
+        top: 50%;
+        right: 20px;
+        height: 20px;
+        width: 28px;
         position: absolute;
+        transform: translateY(-50%);
         z-index: 20; /* Assicura che il menu hamburger sia sopra il menu */
     }
   
     .hamburger span {
         display: block;
-        top: 8px;
         position: absolute;
-        width: 30px;
+        width: 28px;
         height: 3px;
         background-color: black;
-        border-radius: 5px;
-        transition: all 0.3s ease; /* Aggiunge una transizione per l'animazione */
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        left: 0;
     }
   
-    .hamburger span:nth-child(1) {margin-top: -1.5px;}
-    .hamburger span:nth-child(2) {margin-top: 12.5px;}
-    .hamburger span:nth-child(3) {margin-top: 6px;}
+    .hamburger span:nth-child(1) {
+        top: 0;
+    }
     
-  }
+    .hamburger span:nth-child(2) {
+        top: 8.5px;
+    }
+    
+    .hamburger span:nth-child(3) {
+        top: 17px;
+    }
+    
+    /* Animazione hamburger quando aperto */
+    .open .hamburger span:nth-child(1) {
+        top: 8.5px;
+        transform: rotate(45deg);
+    }
+    
+    .open .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .open .hamburger span:nth-child(3) {
+        top: 8.5px;
+        transform: rotate(-45deg);
+    }
+}
 
 
 

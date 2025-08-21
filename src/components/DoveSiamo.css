@@ -1,7 +1,7 @@
 /* Stili specifici per la pagina DoveSiamo */
 
 .beaches {
-    padding: 50px 60px 50px 60px;
+    padding: 50px 70px 50px 70px;
     background-color: #f8f9fa;
     display: flex;
     gap: 40px;
@@ -23,7 +23,7 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.beach-info h3 {
+.beaches .beach-info h3 {
     color: #518ae1;
     font-size: 22px;
     margin-bottom: 15px;
@@ -31,9 +31,8 @@
     font-weight: 600;
 }
 
-.beach-info p {
+.beaches .beach-info p {
     font-size: 14px;
-    line-height: 28px;
     color: #333;
     margin: 0;
     text-align: justify;

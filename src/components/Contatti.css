@@ -1,0 +1,101 @@
+/* Stili per la pagina Contatti */
+
+.contatti {
+    padding: 70px 10% 50px 10%;
+    font-size: 16px;
+    position: relative;
+    text-align: justify;
+}
+
+.contatti h3 {
+    font-size: 24px;
+    color: #518ae1;
+    margin-bottom: 30px;
+    font-family: 'Rubik', 'Noto Sans', 'Montserrat', 'Open Sans', 'Lato', sans-serif;
+    font-weight: 600;
+}
+
+.contatti-map {
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 100%;
+    height: 300px;
+}
+
+.contatti p {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.contatti-emoji {
+    font-size: 1.5em;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Media queries per responsività */
+@media (max-width: 768px) {
+    .contatti {
+        padding: 50px 5% 30px 5%;
+    }
+    
+    .contatti h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .contatti-map {
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    
+    .contatti p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contatti {
+        padding: 30px 3% 20px 3%;
+    }
+    
+    .contatti h3 {
+        font-size: 18px;
+    }
+    
+    .contatti-map {
+        height: 200px;
+    }
+    
+    .contatti p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+/* Stili per schermi grandi */
+@media (min-width: 1200px) {
+    .contatti {
+        padding: 90px 8% 70px 8%;
+    }
+    
+    .contatti h3 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    
+    .contatti-map {
+        height: 400px;
+        margin-bottom: 40px;
+    }
+    
+    .contatti p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
