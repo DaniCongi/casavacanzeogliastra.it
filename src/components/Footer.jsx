@@ -29,7 +29,6 @@ function Footer() {
                     <li><Link to="/DoveSiamo">Dove Siamo</Link></li>
                     <li><Link to="/Villette">Villette</Link></li>
                     <li><Link to="/CulturaCucina">Cultura e Cucina</Link></li>
-                    <li><Link to="/Contatti">Contatti</Link></li>
                 </ul>
                 </div>
             </div>
@@ -39,6 +38,11 @@ function Footer() {
                 </div>
             </div>
         </div>
+        
+        {/* Link Instagram per mobile - posizionato in basso a sinistra */}
+        <a href="https://www.instagram.com/casa_vacanze_ogliastra" target="_blank" rel="noopener noreferrer" className="instagram-mobile" aria-label="Instagram">
+        </a>
+        
             <div className="footer_copyright">
             © {new Date().getFullYear()} Casa Vacanze Ogliastra. Tutti i diritti riservati.
             </div>

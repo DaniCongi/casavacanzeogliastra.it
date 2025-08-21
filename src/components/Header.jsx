@@ -31,10 +31,9 @@ function Header () {
           <li><Link to="/DoveSiamo" onClick={closeMenu}>Dove Siamo</Link></li>
           <li><Link to="/Villette" onClick={closeMenu}>Villette</Link></li>
           <li><Link to="/CulturaCucina" onClick={closeMenu}>Cultura e Cucina</Link></li>
-          <li className="mobile-only"><Link to="/Contatti" onClick={closeMenu}>Contattaci</Link></li>
       </ul>
     </nav>
-    <Link to="/Contatti" className="button desktop-only">Contattaci</Link>
+    <Link to="/Contatti" className="button">Contattaci</Link>
     <div className="hamburger" onClick={toggleMenu}>
       <span></span>
       <span></span>

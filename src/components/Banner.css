@@ -75,8 +75,7 @@
     }
 
     .banner_image {
-        width: 100%; /* Rende l'immagine a larghezza piena */
-        padding: 20px 0px 0px 0px; /* Riduce il padding per i dispositivi mobili */
+        display: none; /* Nasconde completamente l'immagine sui dispositivi mobili */
     }
 
     .banner_text .button {

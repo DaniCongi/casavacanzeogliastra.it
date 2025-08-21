@@ -82,7 +82,23 @@
         height: 70px;
     }
     
-    .header {padding-left: 20px; padding-right: 20px; position: relative;}
+    .header {
+        padding-left: 20px; 
+        padding-right: 80px; 
+        position: relative;
+        flex-wrap: wrap;
+    }
+    
+    /* Pulsante contattaci su mobile - allineato con hamburger */
+    .button {
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 50%;
+        right: 65px;
+        transform: translateY(-50%);
+        z-index: 5;
+    }
     
     /* Menu mobile migliorato */
     .menu {
