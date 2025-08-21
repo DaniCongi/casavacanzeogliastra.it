@@ -33,7 +33,7 @@ function Header () {
           <li><Link to="/CulturaCucina" onClick={closeMenu}>Cultura e Cucina</Link></li>
       </ul>
     </nav>
-    <Link to="/Contatti" className="button">Contattaci</Link>
+    <Link to="/Contatti" className="button">Contatti</Link>
     <div className="hamburger" onClick={toggleMenu}>
       <span></span>
       <span></span>

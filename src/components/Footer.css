@@ -41,12 +41,30 @@
     text-decoration: none;
     line-height: 18px;
     list-style: none; /* Rimuove i punti elenco */
+    text-align: center; /* Allinea al centro */
 } 
+
+.footer_Privacy_Cookies_Policy ul {
+    text-align: center; /* Allinea la lista al centro */
+}
+
+.footer_Privacy_Cookies_Policy li {
+    text-align: center; /* Allinea i singoli elementi al centro */
+}
 
 .footer_links {
     text-decoration: none;
     line-height: 18px;
     list-style: none; /* Rimuove i punti elenco */
+    text-align: center; /* Allinea al centro */
+}
+
+.footer_links ul {
+    text-align: center; /* Allinea la lista al centro */
+}
+
+.footer_links li {
+    text-align: center; /* Allinea i singoli elementi al centro */
 }
 
 .footer_social {
@@ -167,15 +185,26 @@ ul, li {
     }
     
     .footer_text p {
-        font-size: 11px;
-        line-height: 16px;
+        font-size: 9px;
+        line-height: 14px;
         margin: 0;
         flex: 1;
     }
     
     ul, li {
-        font-size: 12px;
-        line-height: 22px;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    
+    .footer_copyright {
+        font-size: 8px;
+    }
+    
+    /* Allinea il copyright con il pulsante Instagram */
+    .footer_copyright {
+        position: relative;
+        margin-top: -25px;
+        padding-bottom: 15px;
     }
 }
 

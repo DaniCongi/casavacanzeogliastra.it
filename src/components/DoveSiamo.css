@@ -1,5 +1,20 @@
 /* Stili specifici per la pagina DoveSiamo */
 
+/* Override del banner per DoveSiamo - mostra l'immagine anche su mobile */
+@media (max-width: 768px) {
+    .banner .banner_image {
+        display: block !important; /* Forza la visualizzazione dell'immagine */
+        width: 100%;
+        padding: 20px 0px 0px 0px;
+    }
+    
+    .banner .banner_image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
 .beaches {
     padding: 50px 70px 50px 70px;
     background-color: #f8f9fa;
